@@ -1,3 +1,3 @@
-# first
+Readme
 
-Hello! This is shauqi. Learning coding again after dabbling a little in it when I was in University!
+Coding sandbox for future creations
