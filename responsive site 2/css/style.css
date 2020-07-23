@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&family=Roboto+Condensed&display=swap');
+
+body  {
+/* font-family: 'Roboto Condensed', sans-serif; */
+/* font-family: 'Raleway', sans-serif; */
+font-family: 'Playfair Display', serif;
+background: hsl(0, 100%, 85%);
+margin: 0;
+height: auto;
+/* height auto means that the height depends on other properties */
+}
+
+h1  {
+  font-weight: 1000;
+  font-size: 2.5rem;
+  /* rem is a multiplier for the default font size. html default font size is 16px so 16*2.5=40 */
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+img{
+  display: block;
+  width: 100%;
+  /* when you use % you can make the image size be a % of the container (which is the browser window). in this case the block follows the size of the window? */
+}
+
+main{
+  max-width: 900px;
+  margin: auto;
+  /* margin auto means that the main section will be put into the middle automatically when you reach the max width */
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4),
+  /* ^ this offsets the rear shadow 30px to the right so it sets the boxes right side shadow */
+  -30px 0px 40px rgba(0, 0, 0, 0.4);
+  /* ^ this offsets the rear shadow 30px to the right so it sets the boxes right side shadow */
+  /* the comma needs to be in between subsequent shadows */
+}
+
+#landing{
+  background: whitesmoke;
+}
+
+#landing-text{
+  background: rgb(255, 251, 191);
+  /* content colour supersedes the container color */
+  display: flex;
+  flex: 0 1 40vw;
+  /* flex grow, flex shrink, viewport width */
+  height: 50vh;
+  justify-content: center;
+   /* if your title text has more words than  the width of screen, the text will not be aligned to the centre using this property. Only after adding the text align css property did my text move to the centre. */
+  text-align: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#landing-text h2{
+  color: rgb(85, 85, 85);
+}
+
+#landing-image{
+  background: url(https://v0rdsw.by.files.1drv.com/y4mjS3HIIfX1QGKjerBRwzoS5EMGffXXcNlvEBaFiVsq-fioaB6vbqxQ1tw_cBzUR-Gjj4M7ojEHA9Mfmylc0dlMmp1USQNx7EwtpX5gtkMWNgiXqsh9jUq3SX4Oo0Vo-r42YB5YjpduwygjYvDMcL5nJxlNV4yzgRRL50A7hC_KZu0fVrBZJ2iZuphPntOU1h-C50RWFo3-PhwqQEf0n22wg?width=900&height=1200&cropmode=none);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn{
+  padding: 0.5rem 2rem;
+  border: 1px #ffffff solid;
+  display: inline-block;
+  margin: 2rem;
+  border-radius: 50px;
+  border-color: slategray;
+  text-decoration: none;
+  color: rgb(66, 66, 66);
+  transition: 600ms ease-in-out;
+}
+
+.btn:hover{
+  background: rgb(126, 92, 92);
+}
+
+#header{
+  padding: 1.5rem;
+  text-align: center;
+  background: slategrey;
+  color: antiquewhite;
+}
+
+#header h2{
+  border-left: dotted 1px whitesmoke;
+  border-right: dotted 1px whitesmoke;
+  display: inline;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.caption{
+  padding: 0.8rem;
+  text-align: center;
+  color: rgb(97, 111, 124);
+
+}
+
+footer{
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: slategray;
+}
+
+footer h3{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Screen sizes 500px and up. lets also see 900px which is max width of main */
+/* min width 500px means that anything above 500px will have this media query applied */
+@media(min-width: 700px) {
+  #landing{
+    display: flex;
+    height: 100%;
+  }
+  #landing-text{
+    height: 100vh;
+    /* height: 100%;?? */
+  }
+  #landing-image{
+    height: 100vh;
+  }
+}
+
+/* screen sizes 900px up */
+@media(min-width: 900px) {
+  .btn{
+    padding: 1rem 3rem;
+  }
+}
