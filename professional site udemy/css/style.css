@@ -1,0 +1,44 @@
+.nav-wrapper {
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+}
+
+.left-side {
+  display: flex;
+  /* font-size: 3em;  */
+}
+
+/* a {
+  display: flex;
+  font-size: 6em;
+} */
+
+/* #link-wrap1{
+  background-color: blue;
+} */
+
+.nav-wrapper > .left-side > div  {
+  margin-right: 7px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(175, 152, 60);
+  transition: color 0.5s;
+}
+
+#link-wrap {
+  background-color: antiquewhite;
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+#link-wrap:hover {
+  border-bottom: 1px solid black;
+}
+
+#link-wrap > a:hover {
+  color: black;
+}
