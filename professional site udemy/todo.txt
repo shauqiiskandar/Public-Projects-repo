@@ -1,0 +1,19 @@
+Todo:
+
+1. Navbar
+    -links and name
+    -links on left side
+    -name on right side
+
+2. Portfolio item grid
+    -images
+    -titles 
+    -descriptions 
+    -icons 
+    -animations
+    -javascript
+
+3. About page 
+    -images
+    -split column layout
+    -content
