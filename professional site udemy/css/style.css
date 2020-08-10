@@ -71,12 +71,12 @@ body {
   margin: auto; */
 }
 
-.portfolio-img-background{
+.portfolio-img-background img{
   height: 350px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   /* bottom: 900px; */
   
 }
