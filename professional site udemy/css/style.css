@@ -94,13 +94,16 @@ body {
   padding-right: 100px;
 }
 
-.img{
+/* .img{
   width: 100%;
-}
+} */
 
 .logo-wrapper img {
-  width: 75%;
-  margin-top: 0;
+  width: 70%;
+  /* margin-top: 0; */
+  padding: 0%;
+  margin-bottom: 0px;
+  border: 0px;
 }
 
 .img-text-wrapper .subtitle {
@@ -112,7 +115,7 @@ body {
 .img-text-wrapper:hover .subtitle {
   font-weight: 600;
   color: coral;
-  /* transition: 1s; */
+  transition: 1s;
   /* filter: brightness(10%); */
 }
 
